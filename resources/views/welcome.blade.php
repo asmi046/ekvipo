@@ -12,6 +12,9 @@
     <meta property="og:url" content="{{ url('/') }}">
     <meta property="og:site_name" content="Екатерина Позднякова">
     <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
+
     <link rel="icon" type="image/svg+xml" href="{{ asset('img/favicons/fav.svg') }}">
     <title>Екатерина Позднякова - Архитектура &amp; Дизайн</title>
     @fonts
