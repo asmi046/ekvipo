@@ -11,7 +11,6 @@
     <meta property="og:image" content="{{ asset('img/og.jpg') }}">
     <meta property="og:url" content="{{ url('/') }}">
     <meta property="og:site_name" content="Екатерина Позднякова">
-    <meta name="twitter:card" content="summary_large_image">
     <meta property="og:image:type" content="image/jpeg" />
     <meta name="twitter:card" content="summary_large_image" />
 
