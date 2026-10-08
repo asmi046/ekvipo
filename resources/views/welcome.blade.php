@@ -36,7 +36,7 @@
             <a href="https://t.me/ek_vi_po" aria-label="Telegram">
                 <img src="{{ asset('img/telegram.svg') }}" alt="" width="20" height="20">
             </a>
-            <a href="https://max.ru/" aria-label="Max">
+            <a href="max.ru/u/f9LHodD0cOLScEOYYpG2rUrp8tFggi6_gHPhAkH2ys9NAfEzrUBpm64hF2U" aria-label="Max">
                 <img src="{{ asset('img/max.svg') }}" alt="" width="20" height="20">
             </a>
             <a href="tel:+79191309006">+7 919 130 90 06</a>
