@@ -1,9 +1,139 @@
-@import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400;500;600;700&display=swap');
 
-@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
-@source '../../storage/framework/views/*.php';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-@theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+body {
+    font-family: 'Wix Madefor Display', sans-serif;
+    background: #ffffff;
+    color: #626161;
+    min-height: 100vh;
+}
+
+.stub {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    font-size: 38px;
+    font-family: 'Wix Madefor Display', sans-serif;
+    box-sizing: border-box;
+}
+
+.stub__title {
+    font-size: 38px;
+    text-transform: uppercase;
+    color: #626161;
+    align-self: center;
+}
+
+.stub__title span {
+    color: #9C135B;
+}
+
+.stub__subtitle {
+    margin-top: 20px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 24px;
+}
+
+.stub__subtitle::before,
+.stub__subtitle::after {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url('../../public/img/list_pin.svg');
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+}
+
+.stub__subtitle::after {
+    transform: scaleX(-1);
+}
+
+.stub__image {
+    margin: auto;
+    font-size: 24px;
+}
+
+.stub__image img {
+    display: block;
+    width: 400px;
+    height: auto;
+}
+
+.stub__update {
+    margin: auto 0 20px;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.stub__contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    font-size: 20px;
+}
+
+.stub__contacts a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+}
+
+.stub__contacts img {
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 480px) {
+    .stub {
+        padding: 50px 20px;
+    }
+
+    .stub__title {
+        font-size: 24px;
+    }
+
+    .stub__subtitle {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .stub__update {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .stub__contacts {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .stub__contacts img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .stub__image img {
+        width: 85%;
+        margin: auto;
+    }
+
+    .stub__subtitle::before,
+    .stub__subtitle::after {
+        align-self: flex-start;
+        margin-top: 3px;
+    }
 }
